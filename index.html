@@ -84,7 +84,7 @@
         -->
       <section class="bg-dzhw aligncenter">
         <!--.wrap = container (width: 90%) -->
-        <div class="wrap size-40">
+        <div class="wrap size-40 fadin slow">
           <h1><img class="whitelogo" src="./static/images/logos/dzhw.svg" alt="DZHW Logo"></h1>
         </div>
         <!-- .end .wrap -->
@@ -233,56 +233,56 @@
         </section>
         <section class="bg-white">
           <div class="wrap">
-            <div class="content-left">
+            <div class="grid">
+            <div class="column">
               <h2><a href="https://aws.amazon.com/de/devops/what-is-devops/">DevOps</a></h3>
               <div class="flexblock specs">
                 <ul>
                   <li>
                   <div>
                     <h2>
-                      <svg class="fa-long-arrow-right" style="height: 10rem;">
+                      <svg class="fa-long-arrow-right">
                         <use xlink:href="#fa-long-arrow-right"></use>
                       </svg>
                       You build it, you run it!
                     </h2>
-                    <p>Ok, but what about: Security, Servers, Databases, Network, etc.?<br>Use Platform-as-a-Service!</p>
+                    <p>Security, Servers, Databases, Network, etc.?</p>
                   </div>
                 </li>
                 <li>
                   <div>
                     <h2>
-                      <svg class="fa-laptop" style="height: 14rem;">
+                      <svg class="fa-laptop">
                         <use xlink:href="#fa-laptop"></use>
                       </svg>
                       Focus on features, automate everything else!
                     </h2>
-                    <p>Ok, but how?
-                      <br>Use successfull Open Source Tools and Software-as-a-Service for dependency management, continous integration, testing, etc.
-                      <br>Furthermore: You are entitled to have requirements.</p>
+                    <p>Ok, but how?</p>
                   </div>
                 </li>
                 <li>
                   <div>
                     <h2>
-                      <svg class="fa-bomb" style="height: 10rem;">
+                      <svg class="fa-bomb">
                         <use xlink:href="#fa-bomb"></use>
                       </svg>
                       Think big, start small, iterate quickly!
                     </h2>
-                    <p>WTF?<br>Ensure that everything can be done on your laptops, thus reduce dependencies to non team members or integrate them temporarily!</p>
+                    <p>WTF?</p>
                   </div>
                 </li>
                 </ul>
               </div>
             </div>
             <!-- end .content-left -->
-            <div class="content-left">
+            <div class="column">
               <!-- <div class="embed"> = Responsive -->
               <div class="embed">
                 <div data-youtube data-youtube-id="JyV7olkqvKE"></div>
               </div>
               <!-- end .embed -->
             </div>
+          </div>
             <!-- end .content-left -->
           </div>
           <!-- .end .wrap -->
@@ -299,7 +299,7 @@
           <div class="wrap">
             <div class="content-left">
             <h2>Scrum</h2>
-            <p>Scrum gilt als leichtgewichtig verglichen mit anderen Projektmanagementmethoden (RUP, PRINCE, etc.). Der Scrumguide definiert allerdings einige wenige Dinge, die nur in ihrer Gesamtheit betrachtet Sinn ergeben.</p>
+            <p>Scrum ist leichtgewichtig (vgl. RUP, PRINCE, etc.).</p>
             <div class="flexblock specs">
               <ul>
                 <li>
@@ -308,7 +308,7 @@
                     <svg class="fa-users">
                       <use xlink:href="#fa-users"></use>
                     </svg>
-                    Rollen
+                    <a href="http://www.scrumguides.org/scrum-guide.html#team">Rollen</a>
                   </h2>
                   <p>Product Owner, Scrum Master, Development Team</p>
                 </div>
@@ -319,7 +319,7 @@
                     <svg class="fa-calendar" style="height: 10rem;">
                       <use xlink:href="#fa-calendar"></use>
                     </svg>
-                    Events
+                    <a href="http://www.scrumguides.org/scrum-guide.html#events">Events</a>
                   </h2>
                   <p>Sprint, Sprint Plannning, (Backlog Refinement,) Daily Scrum, Sprint Review, Sprint Retrospective</p>
                 </div>
@@ -330,7 +330,7 @@
                     <svg class="fa-clipboard" style="height: 10rem;">
                       <use xlink:href="#fa-clipboard"></use>
                     </svg>
-                    Artefakte
+                    <a href="http://www.scrumguides.org/scrum-guide.html#artifacts">Artefakte</a>
                   </h2>
                   <p>Product Backlog, Sprint Backlog, Product Increment</p>
                 </div>
@@ -348,43 +348,40 @@
           <div class="wrap">
             <div class="content-left">
             <h2>Rollen im <a href="http://www.scrumguides.org/scrum-guide.html#team">Scrum Team</a></h2>
-            <p>Das Scrum Team ist selbstorganisiert und interdiszplinär besetzt. Es gibt innerhalb des Scrum Teams keine Hierarchien mit Ausnahme des Product Owners. Selbstorganisierte Teams können nur dann kreativ und effektiv arbeiten, wenn sie unabhängig von anderen außerhalb des Teams sind.</p>
+            <p>Das Team ist <strong>selbstorganisiert</strong> und <strong>interdiszplinär</strong>.</p>
             <div class="flexblock specs">
               <ul>
                 <li>
                 <div>
                   <h2>
-                    <svg class="fa-gift" style="height: 10rem;">
+                    <svg class="fa-gift">
                       <use xlink:href="#fa-gift"></use>
                     </svg>
                     <a href="http://www.scrumguides.org/scrum-guide.html#team-po">Product Owner</a>
                   </h2>
-                  <p>Der Product Owner ist dafür verantwortlich, den Wert des Produktes zu maximieren, das aus der
-Arbeit des Development Teams entsteht.</p>
+                  <p>Maximiert den Wert des Produktes</p>
                 </div>
               </li>
               <li>
                 <div>
                   <h2>
-                    <svg class="fa-user-secret" style="height: 10rem; font-size: 7rem;">
+                    <svg class="fa-user-secret" style="font-size: 7.7rem;">
                       <use xlink:href="#fa-user-secret"></use>
                     </svg>
                     <a href="http://www.scrumguides.org/scrum-guide.html#team-sm">Scrum Master</a>
                   </h2>
-                  <p>Der Scrum Master ist dafür verantwortlich, Scrum entsprechend des Scrum Guides zu fördern
-und zu unterstützen. Scrum Master tun dies, indem sie allen Beteiligten helfen, die Scrum Theorie,
-Praktiken, Regeln und Werte zu verstehen.</p>
+                  <p>Erläutert den Scrum Guide</p>
                 </div>
               </li>
               <li>
                 <div>
                   <h2>
-                    <svg class="fa-users" style="height: 10rem; font-size: 5.5rem;">
+                    <svg class="fa-users">
                       <use xlink:href="#fa-users"></use>
                     </svg>
                     <a href="http://www.scrumguides.org/scrum-guide.html#team-dev">Development Team (3-9 Personen)</a>
                   </h2>
-                  <p>Das Development Team besteht aus Profis (Business Analysts, Web Designer, Software Engineers, Legal Advocates, ...), die am Ende eines jeden Sprints ein fertiges Produktinkrement übergeben, welches potenziell auslieferbar ist.</p>
+                  <p>Erstellt das Produkt Inkrement</p>
                 </div>
               </li>
               </ul>
@@ -399,45 +396,41 @@ Praktiken, Regeln und Werte zu verstehen.</p>
         <section class="bg-white">
           <div class="wrap">
             <div class="content-left">
-            <h2>Scrum Master ist ein Servant Leader</h2>
-            <p>Der Scrum Master hilft dabei, die
-Zusammenarbeit so zu optimieren, dass der durch das Scrum-Team generierte Wert maximiert
-wird.</p>
+            <h2>Servant Leader</h2>
+            <p>Der <a href="http://www.scrumguides.org/scrum-guide.html#team-sm">Scrum Master</a> hilft dem gesamten Team.</p>
             <div class="flexblock specs">
-              <ul>
+              <ul style="width: 100%">
                 <li>
                 <div>
                   <h2>
-                    <svg class="fa-gift" style="height: 10rem;">
+                    <svg class="fa-gift">
                       <use xlink:href="#fa-gift"></use>
                     </svg>
-                    Ausgewählte Dienste für den Product Owner
+                    Dienste für den Product Owner
                   </h2>
-                  <p>Sicherstellen, dass Ziele, Umfang und Produktdomäne von allen im Scrum-Team so gut wie
-möglich verstanden werden. Vermitteln des richtigen Verständnisses von Agilität und ihrer Anwendung.</p>
+                  <p>Produktvision schärfen, Scrum beibringen</p>
                 </div>
               </li>
               <li>
                 <div>
                   <h2>
-                    <svg class="fa-users" style="height: 10rem; font-size: 5.5rem;">
+                    <svg class="fa-users">
                       <use xlink:href="#fa-users"></use>
                     </svg>
-                    Ausgewählte Dienste für das Development Team
+                    Dienste für das Development Team
                   </h2>
-                  <p>Coachen des Development Teams hin zu Selbstorganisation und funktionsübergreifender
-Teamarbeit. Beseitigen von Hindernissen, die das Development Team aufhalten.</p>
+                  <p>Interdiszplinäre Selbstorganisation coachen</p>
                 </div>
               </li>
               <li>
                 <div>
                   <h2>
-                    <svg class="fa-home" style="height: 10rem;">
+                    <svg class="fa-home">
                       <use xlink:href="#fa-home"></use>
                     </svg>
-                      Ausgewählte Dienste für das Unternehmen
+                      Dienste für das Unternehmen
                   </h2>
-                  <p>Leiten und Coachen der Organisation bei der Einführung von Scrum. Auslösen von Veränderungen zur Produktivitätssteigerung des Teams.</p>
+                  <p>Veränderungen für das Team herbeiführen</p>
                 </div>
               </li>
               </ul>
@@ -461,9 +454,7 @@ Ereignisse sind befristet [time boxed], so dass jedes Ereignis eine maximale Dau
                   <h2>
                     <a href="http://www.scrumguides.org/scrum-guide.html#events-sprint">Sprint</a>
                   </h2>
-                  <p>Das Herz von Scrum ist der Sprint, ein Zeitraum [Time Box] von maximal einem Monat, innerhalb
-dessen ein fertiges ["Done"], nutzbares und potenziell auslieferbares Produktinkrement
-hergestellt wird.</p>
+                  <p>Time Box von maximal einem Monat zur <strong>Fertig</strong>stellung eines Produktinkrements</p>
                 </div>
               </li>
               <li>
@@ -471,8 +462,7 @@ hergestellt wird.</p>
                   <h2>
                     <a href="http://www.scrumguides.org/scrum-guide.html#events-planning">Sprint Planning</a>
                   </h2>
-                  <p>Im Sprint Planning wird die Arbeit für den kommenden Sprint geplant. Dieser Plan entsteht
-durch die gemeinschaftliche Arbeit des gesamten Scrum-Teams.</p>
+                  <p>Auswahl der Backlog Items für den nächsten Sprint</p>
                 </div>
               </li>
               <li>
@@ -480,9 +470,7 @@ durch die gemeinschaftliche Arbeit des gesamten Scrum-Teams.</p>
                   <h2>
                     <a href="http://www.scrumguides.org/scrum-guide.html#events-daily">Daily Scrum</a>
                   </h2>
-                  <p>Das Daily Scrum ist eine Time Box von 15 Minuten für das Development Team. Das Daily Scrum
-findet an jedem Tag des Sprints statt. Das Development Team plant dabei die Arbeit für die
-nächsten 24 Stunden.</p>
+                  <p>Tägliche Planung der anstehenden Arbeit (15 Minuten)</p>
                 </div>
               </li>
               <li>
@@ -490,10 +478,7 @@ nächsten 24 Stunden.</p>
                   <h2>
                     <a href="http://www.scrumguides.org/scrum-guide.html#events-review">Sprint Review</a>
                   </h2>
-                  <p>Am Ende eines Sprints wird ein Sprint Review abgehalten, um das Produktinkrement zu
-überprüfen und das Product Backlog bei Bedarf anzupassen. Während des Sprint Reviews
-beschäftigen sich das Scrum-Team und die Stakeholder gemeinsam mit den Ergebnissen des
-Sprints.</p>
+                  <p>Das auslieferbare Produktinkrement wird am Ende eines Sprints vorgestellt</p>
                 </div>
               </li>
               <li>
@@ -501,16 +486,15 @@ Sprints.</p>
                   <h2>
                     <a href="http://www.scrumguides.org/scrum-guide.html#events-retro">Sprint Retrospektive</a>
                   </h2>
-                  <p>Die Sprint Retrospektive bietet dem Scrum-Team die Gelegenheit, sich selbst zu überprüfen und
-einen Verbesserungsplan für den kommenden Sprint zu erstellen.</p>
+                  <p>Die Zusammenarbeit des Teams im letzten Sprint wird vom Team begutachtet</p>
                 </div>
               </li>
               <li>
                 <div>
                   <h2>
-                    Backlog Refinement
+                    Backlog Refinement (nicht im Scrum Guide)
                   </h2>
-                  <p>Dieses Event wird von vielen in der Praxis durchgeführt, ist im Scrum Guide jedoch als dauerhafte Tätigkeit des gesamten Scrum Teams beschrieben. In diesem werden Anforderungen weiter präzisiert und ggf. neu priorisiert.</p>
+                  <p>Backlog Items präzisieren und ggf. neu priorisieren</p>
                 </div>
               </li>
               </ul>
@@ -529,10 +513,7 @@ ein gleiches Verständnis über das Artefakt zu schaffen.</p>
                   <h2>
                     <a href="http://www.scrumguides.org/scrum-guide.html#artifacts-productbacklog">Product Backlog</a>
                   </h2>
-                  <p>Das Product Backlog ist eine geordnete Liste von allem, von dem bekannt ist, dass es im Produkt
-enthalten sein soll. Es dient als einzige Anforderungsquelle für alle Änderungen am Produkt. Der
-Product Owner ist für das Product Backlog, seine Inhalte, den Zugriff darauf und die Reihenfolge
-der Einträge verantwortlich.</p>
+                  <p>Vom Product Owner geordnete Liste aller Anforderungen an das Produkt</p>
                 </div>
               </li>
               <li>
@@ -540,8 +521,7 @@ der Einträge verantwortlich.</p>
                   <h2>
                     <a href="http://www.scrumguides.org/scrum-guide.html#artifacts-sprintbacklog">Sprint Backlog</a>
                   </h2>
-                  <p>Das Sprint Backlog ist die Menge der für den Sprint ausgewählten Product-Backlog-Einträge,
-ergänzt um einen Plan, um das Produktinkrement zu liefern und das Sprint-Ziel zu erreichen.</p>
+                  <p>Für den Sprint ausgewählte Product-Backlog-Einträge</p>
                 </div>
               </li>
               <li>
@@ -549,10 +529,7 @@ ergänzt um einen Plan, um das Produktinkrement zu liefern und das Sprint-Ziel z
                   <h2>
                     <a href="http://www.scrumguides.org/scrum-guide.html#artifacts-increment">Product Increment</a>
                   </h2>
-                  <p>Das Produkt Inkrement ist das Ergebnis aus allen in einem Sprint fertiggestellten Product-Backlog-Einträgen
-und dem Resultat der Inkremente aller früheren Sprints. Am Ende eines Sprints muss
-das neue Inkrement fertig ["Done"] sein; das heißt es muss in einem verwendbaren Zustand sein
-und die Definition of Done des Teams erfüllen.</p>
+                  <p>Summe aller <strong>fertig</strong>gestellten Sprint-Backlog-Einträge</p>
                 </div>
               </li>
               </ul>
@@ -565,39 +542,38 @@ und die Definition of Done des Teams erfüllen.</p>
             <h2>Beispiel: Produkt <a href="https://metadata.fdz.dzhw.eu">MDM</a></h2>
             <p>Das MDM wird als agiles DevOps Team entwickelt.</p>
             <div class="flexblock specs">
-              <ul>
+              <ul style="width: 100%;">
                 <li>
                 <div>
                   <h2>
-                    <svg class="fa-gift" style="height: 14rem;">
+                    <svg class="fa-gift">
                       <use xlink:href="#fa-gift"></use>
                     </svg>
-                    Herausforderungen des Product Owners
+                    Product Owner
                   </h2>
-                  <p>Das <a href="https://github.com/dzhw/metadatamanagement/issues">Product Backlog</a> wird gemeinschaftlich gepflegt. Die Umsetzung der Items ist momentan jedoch nicht möglich, weil das Scrum Team nicht selbstorganisiert arbeiten kann. Die Verantwortung für einzusetzende Ressourcen (Geld, Spezialisten, Software, Hardware, etc.) liegt nicht ausschließlich im Team.</p>
+                  <p><a href="https://github.com/dzhw/metadatamanagement/wiki/Product-Vision">Produkt Vision</a>, <a href="https://github.com/dzhw/metadatamanagement/issues">Product Backlog</a></p>
                 </div>
               </li>
               <li>
                 <div>
                   <h2>
-                    <svg class="fa-user-secret" style="height: 13rem; font-size: 7rem;">
+                    <svg class="fa-user-secret" style="font-size: 7.7rem;">
                       <use xlink:href="#fa-user-secret"></use>
                     </svg>
-                    Herausforderungen des Scrum Masters
+                    Scrum Master
                   </h2>
-                  <p>Der Scrum Master ist auch Software Engineer und Architekt. Dadurch ist ein Fokus auf die Rolle nicht möglich.
-                    <br>Das Unternehmen ist es nicht gewohnt agil zu denken. (Schnell) klein anfangen und in vielen Iteration im Team dem Ziel näherzukommen fällt vielen schwer.</p>
+                  <p><a href="https://github.com/dzhw/metadatamanagement/wiki/Sprint-History">Sprint Historie</a></p>
                 </div>
               </li>
               <li>
                 <div>
                   <h2>
-                    <svg class="fa-users" style="height: 10rem; font-size: 5.5rem;">
+                    <svg class="fa-users">
                       <use xlink:href="#fa-users"></use>
                     </svg>
-                    Herausforderungen des Development Teams
+                    Development Team
                   </h2>
-                  <p>Das Development Team ist interdiszplinär besetzt, allerdings fehlen Software Engineers. Abhängigkeiten zu anderen Unternehmenseinheiten (z.B. durch den geschützten Bereich) verzögern die Auslieferung von einzelnen Produkt Inkrementen seit mehreren <a href="https://github.com/dzhw/metadatamanagement/milestone/69">Sprints</a>.</p>
+                  <p><a href="https://github.com/dzhw/metadatamanagement/milestone/69">Sprint Backlog</a>, <a href="https://github.com/dzhw/metadatamanagement/releases">Produkt Inkremente</a></p>
                 </div>
               </li>
               </ul>
